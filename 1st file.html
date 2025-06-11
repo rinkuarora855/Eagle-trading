@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eagle Trading</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e7f2fd;
+    }
+    .header {
+      background-color: #0072ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #0072ff;
+    }
+    .btn {
+      background-color: #0072ff;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #005fdd;
+    }
+    .trade-options .btn {
+      margin: 8px 10px;
+      width: 40%;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      .trade-options .btn {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">🦅 Eagle <span style="color: lightgreen;">Trading</span></div>
+  </div>
+
+  <div class="container">
+
+    <!-- Wallet -->
+    <div class="card">
+      <h2>Your Wallet</h2>
+      <p>Balance: ₹0 🔄</p>
+      <a href="add-money.html" class="btn">Add Money</a>
+    </div>
+
+    <!-- Trading Amount -->
+    <div class="card">
+      <h2>Choose Trading Amount</h2>
+      <p>Select an amount to Trade:</p>
+      <div class="trade-options">
+        <a href="trade.html?amount=100" class="btn">Trade ₹100</a>
+        <a href="trade.html?amount=250" class="btn">Trade ₹250</a>
+        <a href="trade.html?amount=500" class="btn">Trade ₹500</a>
+        <a href="trade.html?amount=800" class="btn">Trade ₹800</a>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="card">
+      <h2>Your Portfolio</h2>
+      <p>No active trades.</p>
+    </div>
+
+    <!-- Withdrawal -->
+    <div class="card">
+      <h2>Withdrawal Request</h2>
+      <a href="withdraw.html" class="btn">Withdrawal</a>
+      <p>Instant Withdrawal 24x7</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
